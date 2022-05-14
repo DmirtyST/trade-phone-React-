@@ -1,0 +1,32 @@
+
+.controller{
+   display: flex;
+   align-items: center;
+
+   input{
+      padding-left: 10px;
+      margin-left: 10px;
+      border: none;
+      border-radius: 8px;
+      height: 35px;
+     width: 700px;
+      outline: none;
+   }
+}
+
+
+@media (max-width:1017px) {
+   .controller{
+      display: flex;
+      align-items: center;
+   
+      input{
+         padding-left: 10px;
+         margin-left: 0px;
+         
+         height: 35px;
+        width: 100%;
+         
+      }
+   }
+}

@@ -1,0 +1,188 @@
+.HomePage{
+   display: flex;
+   min-height: calc(100vh - 80px);
+   background-color: #000000;
+   padding-top: 75px;
+   .item{
+      
+   
+     
+      
+     
+         width: 80%;
+       
+      
+   }
+   
+}
+
+.row{
+   display: flex;
+}
+
+.btnPanel{
+   position: absolute;
+   right: 60px;
+   top: 30px;
+   z-index: 22;
+}
+.closeMediaPanel{
+   visibility: hidden;
+   position: absolute;
+   position: relative;
+   left: 20px;
+   top: -25px;
+   font-size: 15px;
+   color:#f06100 ;
+   font-weight: 600;
+   cursor: pointer;
+   border: 1px solid #f1e3e3;
+   padding: 10px;
+   transition: all ease .4s;
+   
+   font-style: normal;
+   &:hover{
+      transition: all ease .4s;
+      background-color: #f06100;
+      color:white ;
+   }
+}
+.mediaPanel {
+   visibility: hidden;
+   position: absolute;
+   left: 0;
+   transform: translate(-100%);
+   z-index: 33;
+   top: 80px;
+   transition: all ease .4s;
+  opacity: 0;
+  padding-top: 0px;
+  background-color: #ffffff;
+   height: 100%;
+   
+  
+}
+
+.mediaPanelActive {
+   
+   padding-top: 0px;
+   transition: all ease .4s;
+   position: fixed;
+   transform: translate(-0%);
+   left: 0;
+   z-index: 33;
+   top: 80px;
+   background-color: #ffffff;
+   height: 100%;
+   border-right:  1px solid #f06100;
+   padding-bottom: 210px;
+}
+
+.mediaPanelActive body{
+  visibility: hidden;
+}
+
+.mediaPanelActive body {
+   overflow: hidden;
+}
+
+.mediaPanelActive body {
+  background-color: #f06100;
+}
+
+@media (max-width:1400px) {
+   .initialPanel{
+      visibility: hidden;
+      position: absolute;
+   }
+
+   .wrapper{.item{
+      
+   
+     
+
+     
+      width: 100%;
+    
+   
+}}
+   
+}
+
+
+@media (max-width:1017px) {
+   .initialPanel{
+      visibility: hidden;
+      position: absolute;
+   }
+
+   .mediaPanel,.mediaPanelActive{
+      top: 120px;
+   }
+
+   .wrapper{
+      display: flex;
+      min-height: calc(100vh - 80px);
+      background-color: #fff;
+      padding-top: 120px;
+      .item{
+         
+      
+        
+   
+        
+            width: 100%;
+          
+         
+      }
+      
+   }
+}
+
+
+@media (max-width:522px) {
+   
+   .mediaPanelActive {
+      padding-top: 50px;
+      transition: all ease .4s;
+      position: fixed;
+      transform: translate(-0%);
+      background-color: #fafafa;
+      top: 120px;
+    
+      height: 100%;
+      width: 100%;
+      padding-bottom: 100px;
+      border-right:  none;
+   }
+   
+   .closeMediaPanel{
+      visibility: visible;
+     
+      
+      
+   }
+
+   .mediaPanel {
+      position: fixed;
+      left: 0;
+      transform: translate(-100%);
+      z-index: 33;
+      top: 80px;
+      transition: all ease .4s;
+     opacity: 0;
+     padding-top: 50px;
+     background-color: #ffffff;
+      height: 100%;
+      
+     
+   }
+   
+}
+
+
+
+
+
+
+

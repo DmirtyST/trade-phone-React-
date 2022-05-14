@@ -1,0 +1,42 @@
+p{
+   display: flex;
+   justify-content: space-between;
+}
+
+.form_controll{
+
+   margin-bottom: 20px;
+  
+   .title{
+      font-size: 18px;
+      margin-bottom: 15px;
+      transition: all ease .4s;
+      cursor: pointer;
+      &:hover{
+         transition: all ease .4s;
+          color: #f06100;
+      }
+   }
+}
+
+
+.searchPanel{
+   padding: 25px;
+   background-color: #ffffff;
+   height: 100%;
+   width: 100%;
+   overflow-y: auto;
+  
+}
+
+@media (max-width:1400px) {
+   .searchPanel{
+      padding: 22px;
+      background-color: #ffffff;
+      height: 100%;
+      padding-bottom: 50px;
+      overflow: auto;
+   }
+}
+
+
